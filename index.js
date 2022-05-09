@@ -2,6 +2,7 @@ var date = $("#inputData").val();
 var recebeVideo = $("#receiveVideo");
 var recebeImagem = $("#receiveImg");
 var imgAndVideo = $("#receiveImgOrVideo")
+var dateInput = $('#inputDate')
 
 
 
@@ -23,6 +24,7 @@ $('#btnDate').click(function () {
             }
             $("p").text(info.explanation)
             imgAndVideo.css("display", "flex")
+            dateInput.css("margin-top", "30px")
             }
 
     })

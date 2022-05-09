@@ -11,7 +11,7 @@
 
 body {
     background-image: url(./Img/2139e0405ae392726363954e18afa342.jpg);
-    background-size: 100%;
+    background-size: auto;
 }
 
 header {
@@ -28,12 +28,14 @@ header h1 {
 
 .container {
     display: flex;
+    height: 100%;
     flex-direction: column;
     align-items: center;
 }
 
 .inputDate {
     display: flex;
+    margin-top: 200px;
     flex-direction: column;
     align-items: center;
     gap: 5px;
@@ -80,12 +82,15 @@ header h1 {
 h2{
     margin-top: 10px;
     color: rgb(233, 0, 0);
+    text-align: center;
+    font-size: 40px;
     font-family: 'Nunito', sans-serif;
 }
 
 p {
     text-align: center;
     font-family: 'Nunito', sans-serif;
+    font-size: 15px;
 }
 
 
