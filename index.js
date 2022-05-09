@@ -20,7 +20,7 @@ $('#btnDate').click(function () {
                 recebeVideo.css("display", "none")
             }else if(info.media_type == "video"){
                 recebeVideo.attr("src", info.url).css("display", "flex")
-                recebeImagem.css("display", "flex")
+                recebeImagem.css("display", "none")
             }
             $("p").text(info.explanation)
             imgAndVideo.css("display", "flex")
