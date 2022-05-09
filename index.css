@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'StarJedi';
+    src: url(./fonts/Starjedi.ttf);
+}
+
+body {
+    background-image: url(./Img/2139e0405ae392726363954e18afa342.jpg);
+    background-size: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    font-family: 'StarJedi';
+    font-size: 50px;
+    -webkit-text-stroke: 0.5px black;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputDate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.btnDate {
+    border: 3px solid black;
+    margin-top: 4px;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    font-weight: normal;
+    background-color: rgba(180, 180, 180, 0.7);
+    border-radius: 200px;
+    padding: 15px;
+}
+
+.inputDate h3 {
+    font-family: 'StarJedi';
+    -webkit-text-stroke: 0.3px black;
+    margin-top: 10px;
+    color: white;
+}
+
+.receiveImgOrVideo {
+    display: flex;
+    margin-top: 30px;
+    border-radius: 30px;
+    gap: 15px;
+    border: 4px solid black;
+    background-color: rgba(180, 180, 180, 0.7);
+    width: 80%;
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.receiveImg {
+    display: none;
+    width: 30%;
+}
+.receiveVideo {
+    display: none;
+}
+
+h2{
+    margin-top: 10px;
+    color: rgb(233, 0, 0);
+    font-family: 'Nunito', sans-serif;
+}
+
+p {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+
