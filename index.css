@@ -57,14 +57,14 @@ header h1 {
 }
 
 .receiveImgOrVideo {
-    display: flex;
+    display: none;
     margin-top: 30px;
     border-radius: 30px;
     gap: 15px;
     border: 4px solid black;
     background-color: rgba(180, 180, 180, 0.7);
     width: 80%;
-    height: 500px;
+    height: 650px;
     flex-direction: column;
     align-items: center;
 }

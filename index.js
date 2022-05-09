@@ -1,6 +1,7 @@
 var date = $("#inputData").val();
 var recebeVideo = $("#receiveVideo");
 var recebeImagem = $("#receiveImg");
+var imgAndVideo = $("#receiveImgOrVideo")
 
 
 
@@ -12,7 +13,6 @@ $('#btnDate').click(function () {
         type: "GET",
 
         success: function (info) {
-            console.log(info)
             $("h2").text(info.title);
             if (info.media_type == "image" || info.media_type == "gif") {
                 recebeImagem.attr("src", info.url).css("display", "flex")
@@ -22,6 +22,7 @@ $('#btnDate').click(function () {
                 recebeImagem.css("display", "flex")
             }
             $("p").text(info.explanation)
+            imgAndVideo.css("display", "flex")
             }
 
     })
