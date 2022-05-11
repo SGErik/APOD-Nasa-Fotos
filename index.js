@@ -7,6 +7,7 @@ var dateInput = $('#inputDate')
 
 
 
+
 $('#btnDate').click(function () {
     var date = $("#inputData").val();
     $.ajax({
