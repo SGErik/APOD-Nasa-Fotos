@@ -1,15 +1,15 @@
-let date = $("#inputData").val();
-let recebeVideo = $("#receiveVideo");
-let recebeImagem = $("#receiveImg");
-let imgAndVideo = $("#receiveImgOrVideo")
-let dateInput = $('#inputDate')
-
+const date = $("#inputData").val();
+const recebeVideo = $("#receiveVideo");
+const recebeImagem = $("#receiveImg");
+const imgAndVideo = $("#receiveImgOrVideo")
+const dateInput = $('#inputDate')
+const note = $("#obs")
 
 
 
 
 $('#btnDate').click(function () {
-    let date = $("#inputData").val();
+    const date = $("#inputData").val();
     $.ajax({
         url: `https://api.nasa.gov/planetary/apod?api_key=gcZG2YgEeGIBCoRRxFtwCbOOhqepwpdLNzBLSaUo&date=${date}`,
         type: "GET",
@@ -26,9 +26,9 @@ $('#btnDate').click(function () {
             $("p").text(info.explanation)
             imgAndVideo.css("display", "flex")
             dateInput.css("margin-top", "30px")
+            note.css("display", "none")
         }
 
     })
 
 })
-
